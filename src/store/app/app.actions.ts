@@ -5,8 +5,6 @@ export const fetchPosts = createAsyncThunk('', async () => {
   try {
     const response = await postsApi.fetchPosts();
 
-    const asd = '';
-
     console.log('fetchPosts[response]', response);
 
     return response.data;
