@@ -1,0 +1,69 @@
+@import '../common';
+
+@mixin section {
+  width: 100%;
+  max-width: $large;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: calc($container + $indent16 * 2);
+  padding: 0 $indent16;
+  margin: 0 auto;
+}
+
+@mixin fullhd {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin desktop-tablet {
+  @media (min-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$large}) and (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin laptop-tablet {
+  @media (max-width: #{$large}) and (min-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin laptop-mobile {
+  @media (max-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$medium}) and (min-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin tablet-mobile {
+  @media (max-width: #{$medium}) {
+    @content;
+  }
+}

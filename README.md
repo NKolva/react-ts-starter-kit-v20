@@ -1,3 +1,10 @@
+# Required node version >= v20.16.0
+
+# .env
+
+In project has been configure 2 .env files - `.env.production` and `.env.development`
+Copy `.env.example` content body and create 2 files which was mentioned above
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

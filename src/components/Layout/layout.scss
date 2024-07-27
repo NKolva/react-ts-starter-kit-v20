@@ -1,0 +1,7 @@
+@import 'src/sass/common';
+@import 'src/sass/mixins';
+
+.layout {
+  width: 100%;
+  padding-top: calc($headerHeight + $headerNotificationHeight);
+}

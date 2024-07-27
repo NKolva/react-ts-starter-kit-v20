@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Bebas Neue Pro';
+  src: url('./BebasNeuePro/BebasNeuePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Activ Grotesk Corp';
+  src: url('./AktivGroteskCorp/aktivgroteskcorp_regular.ttf') format('truetype');
+}
